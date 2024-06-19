@@ -1,0 +1,15 @@
+(test
+ (name test_runner)
+ (libraries huffml ounit2)
+ (preprocess (pps ppx_deriving.show)))
+
+; (executable
+;  (name test_runner)
+;  (modules test_runner)
+;  (libraries ounit2 huffml)
+;  (preprocess (pps ppx_deriving.show)))
+
+
+(rule
+ (alias runtest)
+ (action (run ./test_runner.exe)))
