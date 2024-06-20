@@ -4,4 +4,5 @@ let () =
     Test_utils.suite;
     Test_huffman.suite;
     Test_encoder.suite;
+    Test_decoder.suite;
   ])
